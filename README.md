@@ -23,6 +23,7 @@ It automatically checks exchange rates, compares them with previous values, and 
 
 ## Project Structure
 
+```
 currency-monitor/
 ├── currency.sh
 ├── .env
@@ -30,7 +31,7 @@ currency-monitor/
 ├── README.md
 ├── .state/
 └── currency.log
-
+```
 
 ## How it works
 1. The script sends a request to the API using curl
