@@ -21,6 +21,27 @@ It automatically checks exchange rates, compares them with previous values, and 
 - jq
 - Linux
 
+## Architecture
+
+```
+User
+↓
+Bash Script (currency.sh)
+↓
+curl request
+↓
+NBU API (exchange rates)
+↓
+JSON response
+↓
+jq parsing
+↓
+Compare with previous state (.state)
+↓
+Output (terminal) + Logging (currency.log)
+```
+
+
 ## Project Structure
 
 ```
